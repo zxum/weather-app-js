@@ -62,6 +62,8 @@ async function getCurrentWeather(cityname, units) {
     let sunset = convertToLocationTime(weatherData.sys.sunset, timezone)
     renderElement(sunsetArea, sunset)
 
+    console.log({ weatherData })
+
 }
 
 // City Search Form Submission 
@@ -89,23 +91,9 @@ function switchUnit() {
     }
 }
 
-
-
 function capitalize(string) {
     return string[0].toUpperCase() + string.slice(1);
 }
-
-// function convertKToC(temp) {
-//     return Math.round(Number(temp) - 273.15)
-// }
-
-// function convertKToF(temp) {
-//     return Math.round((Number(temp) - 273.15) * (9 / 5) + 32)
-// }
-
-// function convertToMph(speed) {
-//     return Math.round(Number(speed * 2.237))
-// }
 
 function convertToLocationTime(time, timezone) {
     let d = new Date(time)
