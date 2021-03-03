@@ -53,7 +53,7 @@ form {
 .form-control input {
     background: rgba(255, 255, 255, 0.5);
     border: none;
-    padding: 0.75rem;
+    padding: 0.75rem 1.25rem;
     border-radius: 25px;
 }
 
@@ -81,7 +81,7 @@ section {
 }
 
 .condition {
-    margin-top: 3.5rem;
+    margin-top: 2rem;
     font-size: 100px;
     color: rgba(157, 224, 222, 0.75);
 }
@@ -95,7 +95,7 @@ section {
 .temp {
     display: flex;
     align-items: flex-start;
-    margin-top: -24px;
+    margin-top: -1rem;
 }
 
 .temp span {
@@ -106,6 +106,12 @@ section {
 .temp i {
     font-size: 60px;
     margin-top: 16px;
+    cursor: pointer;
+}
+
+.description {
+    font-size: 0.85rem;
+    color: #4BC0D0;
 }
 
 .grid i {

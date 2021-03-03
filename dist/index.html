@@ -29,35 +29,40 @@
 
     <section>
         <div class="city">
-            <p>Philadelphia</p>
+            <p id="city-area">Philadelphia</p>
         </div>
         <div class="flex-wrapper">
-            <div class="condition">
-                <i class="wi wi-day-cloudy"></i>
+            <div class="condition" id="condition-area">
+                <i id="condition-icon"></i>
             </div>
             <div class="temp">
-                <span>45</span>
-                <i class="wi wi-fahrenheit"></i>
+                <span id="temp-area">45</span>
+                <i class="wi wi-fahrenheit" id="temp-unit"></i>
             </div>
+
+            <div class="description">
+                <p id="condition-desc-area">Thunderstorm with light drizzle</p>
+            </div>
+
             <div class="grid">
                 <div class="grid-wrapper" id='humidity-wrapper'>
                     <i class='wi wi-humidity'></i>
-                    <span>100%</span>
+                    <span id="humidity-area">100%</span>
                 </div>
 
                 <div class="grid-wrapper" id='wind-wrapper'>
-                    <i class="wi wi-wind towards-0-deg"></i>
-                    <span>5mph</span>
+                    <i class="wi wi-wind"></i>
+                    <span id="windspeed-area">5mph</span>
                 </div>
 
                 <div class="grid-wrapper" id='sunrise-wrapper'>
                     <i class="wi wi-sunrise"></i>
-                    <span>5:30 AM</span>
+                    <span id="sunrise-area">5:30 AM</span>
                 </div>
 
                 <div class="grid-wrapper" id='sunset-wrapper'>
                     <i class="wi wi-sunset"></i>
-                    <span>6:30 PM</span>
+                    <span id="sunset-area">6:30 PM</span>
                 </div>
             </div>
         </div>
