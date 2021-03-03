@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="weather-icons.min.css">
+    <link rel="stylesheet" href="weather-icons-wind.min.css">
+    <script src="https://kit.fontawesome.com/31b3a4ba31.js" crossorigin="anonymous"></script>
+    <title>WeatherNow</title>
+</head>
+
+<body>
+    <nav>
+        <i class="wi wi-day-cloudy" id="logo"></i>
+        <h1>Weather<span>Now</span></h1>
+
+        <form>
+            <div class="form-control">
+                <label for="search"><i class="fas fa-search"></i></label>
+                <input type="search" id="search" placeholder="Search by City">
+            </div>
+        </form>
+    </nav>
+
+    <section>
+        <div class="city">
+            <p>Philadelphia</p>
+        </div>
+        <div class="flex-wrapper">
+            <div class="condition">
+                <i class="wi wi-day-cloudy"></i>
+            </div>
+            <div class="temp">
+                <span>45</span>
+                <i class="wi wi-fahrenheit"></i>
+            </div>
+            <div class="grid">
+                <div class="grid-wrapper" id='humidity-wrapper'>
+                    <i class='wi wi-humidity'></i>
+                    <span>100%</span>
+                </div>
+
+                <div class="grid-wrapper" id='wind-wrapper'>
+                    <i class="wi wi-wind towards-0-deg"></i>
+                    <span>5mph</span>
+                </div>
+
+                <div class="grid-wrapper" id='sunrise-wrapper'>
+                    <i class="wi wi-sunrise"></i>
+                    <span>5:30 AM</span>
+                </div>
+
+                <div class="grid-wrapper" id='sunset-wrapper'>
+                    <i class="wi wi-sunset"></i>
+                    <span>6:30 PM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src='index.js'></script>
+</body>
+
+</html>

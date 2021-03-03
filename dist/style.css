@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 1rem;
+    height: 100vh;
+    background: rgb(228, 255, 239);
+    background: radial-gradient(circle, rgba(228, 255, 239, 1) 0%, rgba(168, 255, 252, 1) 100%);
+    color: #314E52;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo {
+    font-size: 2rem;
+    color: #4BC0D0;
+    margin: 0 1rem;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+h1 span {
+    color: #4BC0D0;
+}
+
+form {
+    margin-left: auto;
+    margin-right: 1rem;
+}
+
+.form-control {
+    position: relative;
+}
+
+.form-control label i {
+    position: absolute;
+    top: 12px;
+    right: 15px;
+}
+
+.form-control input {
+    background: rgba(255, 255, 255, 0.5);
+    border: none;
+    padding: 0.75rem;
+    border-radius: 25px;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    width: 350px;
+    height: 500px;
+    margin: 5% auto;
+    padding: 1.5rem;
+}
+
+.city {
+    border-radius: 25px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background: rgba(157, 224, 222, 0.75);
+}
+
+.city p {
+    font-size: 24px;
+}
+
+.condition {
+    margin-top: 3.5rem;
+    font-size: 100px;
+    color: rgba(157, 224, 222, 0.75);
+}
+
+.flex-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temp {
+    display: flex;
+    align-items: flex-start;
+    margin-top: -24px;
+}
+
+.temp span {
+    font-size: 96px;
+    margin: 0;
+}
+
+.temp i {
+    font-size: 60px;
+    margin-top: 16px;
+}
+
+.grid i {
+    font-size: 20px;
+    margin-right: 0.5rem;
+}
+
+.grid {
+    font-weight: lighter;
+    display: grid;
+    margin-top: 2rem;
+    grid-template-areas: 'h sr' 'w ss';
+}
+
+.grid-wrapper {
+    margin: 0.5rem 2rem;
+}
+
+#humidity-wrapper {
+    grid-area: h;
+}
+
+#wind-wrapper {
+    grid-area: w;
+}
+
+#sunrise-wrapper {
+    grid-area: sr;
+}
+
+#sunset-wrapper {
+    grid-area: ss;
+}
